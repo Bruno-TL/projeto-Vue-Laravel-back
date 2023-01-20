@@ -23,7 +23,7 @@ Estou no nível de trainee atualmente.
 - Método usado é o POST, passando o valor pelo o BODY/json na requisição feito pelo axios.
 - Usando Mailgun para simular o recebindo do email gerado pelo o endpoint.
 
-Back => https://github.com/Bruno-TL/projeto-Vue-Laravel-back ;
+Back => https://github.com/Bruno-TL/projeto-Vue-Laravel-Front ;
 
 
 
