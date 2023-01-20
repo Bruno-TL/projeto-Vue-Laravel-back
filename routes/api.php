@@ -1,5 +1,6 @@
 <?php
 
+use App\Mail\RegistrationEmail;
 use App\Mail\SendMail;
 use App\Mail\TestEmail;
 use Illuminate\Http\Request;
@@ -10,11 +11,7 @@ Route::get('/teste', function(){
     return "teste com sucesso";
 });
 
-Route::post('/email',function(){
-    $data = array(
-        'msg' => 'Hello wolrd'
-    );
-
-    Mail::to('tbgt35@hotmail.com')->send(new SendMail($data));
-    return back()->with('sucess', 'Obrigado deu certo');
+Route::post('/email',function( Request $request){
+    Mail::to($request->email)->send(new RegistrationEmail);
+    return response()->json('Você receberá um email');
 } );
