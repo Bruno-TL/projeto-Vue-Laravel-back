@@ -11,7 +11,9 @@ Route::get('/teste', function(){
     return "teste com sucesso";
 });
 
-Route::post('/email',function( Request $request){
+Route::post('/email',function(Request $request){
     Mail::to($request->email)->send(new RegistrationEmail);
-    return response()->json('Você receberá um email');
+    return response()->json('Foi enviando uma mensagem para o seu e-mail');
 } );
+// 
+// 

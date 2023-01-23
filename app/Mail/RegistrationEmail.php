@@ -33,7 +33,7 @@ class RegistrationEmail extends Mailable
     {
         return new Envelope(
             from:new Address('islanethalia9@gmail.com','thalia'),
-            subject: 'Email de Hello world test com sono com post e com request',
+            subject: 'Pois toma um email no teu eamil !!',
         );
     }
 
